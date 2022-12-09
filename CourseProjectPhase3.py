@@ -84,7 +84,7 @@ def PrintTotals (EmpTotals):
     print(f'Total Hours Worked: {EmpTotals["TotHrs"]:,.2f}')
     print(f'Total Gross Pay: {EmpTotals["TotGrossPay"]:,.2f}')
     print(f'Total Income Tax:  {EmpTotals["TotTax"]:,.2f}')
-    print(f'Total Net Pay: {EmpTotals["TotNetPay"]:,.2f')
+    print(f'Total Net Pay: {EmpTotals["TotNetPay"]:,.2f}')
 
 if __name__ == "__main__":
     Empfile = open("Employees.txt", "a+") ###############################

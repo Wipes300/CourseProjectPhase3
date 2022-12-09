@@ -62,7 +62,7 @@ def printinfo():
            hourlyrate = float(EmpList[4])
            taxrate = float(EmpList[5])
            grosspay, incometax, netpay = CalcTaxAndNetPay(hours, hourlyrate, taxrate)
-           print(fromdate,todate, empname, f"{hours:,.2f}", f"{hourlyrate:,.2f}", f"{grosspay:,.2f}", f"{taxrate:,.1%}", f"{incometax:,.2f}", f"{netpay:,.2f")
+           print(fromdate, todate, empname, f"{hours:,.2f}", f"{hourlyrate:,.2f}", f"{grosspay:,.2f}", f"{taxrate:,.1%}", f"{incometax:,.2f}", f"{netpay:,.2f}")
            TotEmployees +- 1
            TotHours += hours
            TotGrossPay += grosspay
@@ -80,7 +80,7 @@ def printinfo():
             print("No detail information to print")
 def PrintTotals (EmpTotals):
     print()
-    print(f'Total Number Of Employees: {EmpTotals["TotEmp]}')
+    print(f'Total Number Of Employees: {EmpTotals["TotEmp"]}')
     print(f'Total Hours Worked: {EmpTotals["TotHrs"]:,.2f}')
     print(f'Total Gross Pay: {EmpTotals["TotGrossPay"]:,.2f}')
     print(f'Total Income Tax:  {EmpTotals["TotTax"]:,.2f}')
